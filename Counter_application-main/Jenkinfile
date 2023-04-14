@@ -4,11 +4,12 @@ pileline{
 
        stages
        {
-            stage('Git checkout')
+            stage('Git checkout'){
                    steps{
                         script{
                          git branch: 'master' , url: 'https://github.com/Suresh-the1/Counter_application-main.git'
                         }
                    } 
+                }
        }
 }
