@@ -6,7 +6,7 @@ pipeline{
   }
   stages{
     stage('Code clone'){
-      scripts{
+      script{
       git branch: 'master', url:'https://github.com/Suresh-the1/Counter_application-main.git'
       }
     }
