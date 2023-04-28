@@ -6,8 +6,10 @@ pipeline{
   }
   stages{
     stage('Code clone'){
-      script{
-      git branch: 'master', url:'https://github.com/Suresh-the1/Counter_application-main.git'
+      steps{
+           script{
+              git branch: 'master', url:'https://github.com/Suresh-the1/Counter_application-main.git'
+           }
       }
     }
   }
