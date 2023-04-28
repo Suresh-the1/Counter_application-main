@@ -1,6 +1,6 @@
 pipeline{
 
-  any agnet
+  agent any
   environment{
     VERSION = "${env.BUILD_ID}"
   }
