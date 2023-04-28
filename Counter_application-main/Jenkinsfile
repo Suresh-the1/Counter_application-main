@@ -11,6 +11,7 @@ pipeline{
               git branch: 'master', url:'https://github.com/Suresh-the1/Counter_application-main.git'
            }
       }
+    }
       stage('Build')
       {
         steps{
@@ -18,7 +19,6 @@ pipeline{
             sh 'mvn clean install'
           }
         }
-      }
-    }
+     }
   }
 }
